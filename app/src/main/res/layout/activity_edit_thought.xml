@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddIntroduction">
+
+    <EditText
+        android:id="@+id/editTextThought"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_margin="40dp"
+        android:layout_marginBottom="200dp"
+        android:hint="Write The Good Thought"
+        android:maxLength="1000"
+        android:gravity="start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Admin"
+        android:layout_margin="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextThought"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/Updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdmin" />
+</androidx.constraintlayout.widget.ConstraintLayout>
